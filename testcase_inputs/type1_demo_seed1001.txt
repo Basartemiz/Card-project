@@ -1,0 +1,96 @@
+draw_card demo0000 4 195
+draw_card demo0001 49 51
+draw_card demo0002 6 143
+draw_card demo0003 25 42
+draw_card demo0004 27 185
+draw_card demo0005 24 145
+draw_card demo0006 42 199
+draw_card demo0007 26 200
+draw_card demo0008 37 51
+draw_card demo0009 39 13
+draw_card demo0010 2 189
+draw_card demo0011 46 192
+draw_card demo0012 32 184
+draw_card demo0013 45 168
+draw_card demo0014 40 189
+draw_card demo0015 13 129
+draw_card demo0016 40 39
+draw_card demo0017 2 145
+draw_card demo0018 7 163
+draw_card demo0019 27 176
+draw_card demo0020 9 26
+draw_card demo0021 17 112
+draw_card demo0022 38 20
+draw_card demo0023 35 143
+draw_card demo0024 26 23
+draw_card demo0025 20 90
+draw_card demo0026 11 103
+draw_card demo0027 3 39
+draw_card demo0028 7 156
+draw_card demo0029 14 2
+draw_card demo0030 28 149
+draw_card demo0031 22 52
+draw_card demo0032 50 36
+draw_card demo0033 35 114
+draw_card demo0034 14 147
+draw_card demo0035 3 16
+draw_card demo0036 24 112
+draw_card demo0037 12 30
+draw_card demo0038 45 91
+draw_card demo0039 34 56
+draw_card demo0040 3 158
+draw_card demo0041 6 60
+draw_card demo0042 34 152
+draw_card demo0043 24 121
+draw_card demo0044 2 187
+draw_card demo0045 43 193
+draw_card demo0046 4 165
+draw_card demo0047 9 38
+draw_card demo0048 8 185
+draw_card demo0049 31 167
+draw_card demo0050 17 67
+draw_card demo0051 7 8
+draw_card demo0052 15 200
+draw_card demo0053 8 125
+draw_card demo0054 13 143
+draw_card demo0055 34 96
+draw_card demo0056 7 18
+draw_card demo0057 40 85
+draw_card demo0058 34 81
+draw_card demo0059 31 8
+battle 60 33 0
+battle 70 43 0
+battle 17 65 0
+deck_count
+battle 33 72 0
+deck_count
+battle 13 119 0
+battle 9 26 0
+battle 16 59 0
+deck_count
+battle 68 65 0
+battle 9 58 0
+deck_count
+battle 57 20 0
+battle 79 39 0
+battle 62 16 0
+deck_count
+battle 60 4 0
+battle 68 35 0
+battle 66 77 0
+battle 68 62 0
+deck_count
+battle 70 20 0
+deck_count
+battle 1 114 0
+battle 58 39 0
+battle 40 65 0
+deck_count
+battle 29 3 0
+deck_count
+battle 80 54 0
+deck_count
+find_winning
+deck_count
+battle 52 66 0
+deck_count

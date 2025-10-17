@@ -1,0 +1,21 @@
+
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "find . -name '*.class' -delete"
+    },
+    {
+      "label": "lint",
+      "type": "shell",
+      "command": "javac src/**/*.java"
+    },
+    {
+      "label": "build-and-lint",
+      "dependsOn": ["build", "lint"],
+      "dependsOrder": "sequence"
+    }
+  ]
+}

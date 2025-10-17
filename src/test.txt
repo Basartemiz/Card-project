@@ -1,0 +1,82 @@
+Found with priority 4, Survivor plays small5512, the played card is discarded, 0 cards revived
+Found with priority 2, Survivor plays small5601, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4932, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small3822, the played card returned to deck, 0 cards revived
+Found with priority 4, Survivor plays small5868, the played card is discarded, 1 cards revived
+Found with priority 2, Survivor plays small4449, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5344, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small3636, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4375, the played card returned to deck, 0 cards revived
+Found with priority 4, Survivor plays small4348, the played card is discarded, 1 cards revived
+Found with priority 2, Survivor plays small5424, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4920, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small3833, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4152, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5928, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5028, the played card returned to deck, 1 cards revived
+Found with priority 2, Survivor plays small4413, the played card returned to deck, 0 cards revived
+Found with priority 4, Survivor plays small4308, the played card is discarded, 0 cards revived
+Found with priority 2, Survivor plays small5539, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5484, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4453, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4506, the played card returned to deck, 1 cards revived
+Found with priority 2, Survivor plays small3743, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5873, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4564, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5508, the played card returned to deck, 0 cards revived
+Found with priority 4, Survivor plays small4450, the played card is discarded, 0 cards revived
+Found with priority 2, Survivor plays small5851, the played card returned to deck, 1 cards revived
+Found with priority 2, Survivor plays small4098, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5500, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4504, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5546, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5771, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4900, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5329, the played card returned to deck, 1 cards revived
+Found with priority 2, Survivor plays small5400, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5731, the played card returned to deck, 0 cards revived
+Found with priority 4, Survivor plays small5540, the played card is discarded, 0 cards revived
+Found with priority 4, Survivor plays small3642, the played card is discarded, 0 cards revived
+Found with priority 2, Survivor plays small5243, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5982, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4555, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5690, the played card returned to deck, 1 cards revived
+Found with priority 2, Survivor plays small4783, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4685, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5165, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small3671, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5807, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5459, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4536, the played card returned to deck, 1 cards revived
+Found with priority 2, Survivor plays small4773, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5819, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4372, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5410, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small3756, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5717, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5672, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5549, the played card returned to deck, 0 cards revived
+Found with priority 4, Survivor plays small3677, the played card is discarded, 0 cards revived
+Found with priority 2, Survivor plays small5741, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5767, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5866, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4544, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5759, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5742, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5772, the played card returned to deck, 1 cards revived
+Found with priority 2, Survivor plays small5881, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4489, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5951, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small3936, the played card returned to deck, 0 cards revived
+Found with priority 4, Survivor plays small5181, the played card is discarded, 0 cards revived
+Found with priority 2, Survivor plays small5749, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4459, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5744, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4868, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4579, the played card returned to deck, 1 cards revived
+Found with priority 2, Survivor plays small5905, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small4636, the played card returned to deck, 0 cards revived
+Found with priority 2, Survivor plays small5980, the played card returned to deck, 0 cards revived
+Found with priority 4, Survivor plays small5486, the played card is discarded, 0 cards revived
+Found with priority 2, Survivor plays small5792, the played card returned to deck, 0 cards revived
+Found with priority 4, Survivor plays small5645, the played card is discarded, 0 cards revived

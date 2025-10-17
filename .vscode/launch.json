@@ -1,0 +1,28 @@
+
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main with Arguments", // Renamed for clarity
+            "request": "launch",
+            "mainClass": "Main",
+            "args": [ // Array of strings for command-line arguments
+                "testcase_inputs/type1_demo_seed1001.txt",
+                "output/test.txt"
+            ],
+             "preLaunchTask": "build-and-lint",
+            "projectName": "cmpe250_project1_36db96f7"
+            
+        }
+    ]
+}
