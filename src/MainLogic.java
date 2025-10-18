@@ -39,8 +39,7 @@ public class MainLogic {
             point_counter_op += 2;
             return "No cards to play, " + revived_count + " cards revived";
         }
-        if(att==1500 && hp==877)
-            System.out.printf("debug");
+        
         // ---------- Priority 1: survive AND kill ----------
         Card pick = pickP1(att, hp);
         if (pick != null) {
@@ -71,8 +70,6 @@ public class MainLogic {
         pick = pickP2(att, hp);
         if (pick != null) {
             Card c = pick;
-            if(c.name.equals("small3619"))
-                System.out.println("here");
             remove_card(c);
             c.battle(new Card(null, att, hp, 0));
             calculate_score(c, oppCard);
@@ -127,7 +124,8 @@ public class MainLogic {
         Card card_pr4 = pickP4();
         if (card_pr4 != null) {
             Card c = card_pr4;
-
+            if (c.name.equals("small5512"))
+                System.out.println("debug");
             remove_card(c);
             c.battle(oppCard);
             calculate_score(c, oppCard);
@@ -162,9 +160,9 @@ public class MainLogic {
     // helper to battle function
     public int revive_from_discarded(int heal_pool) {
         int revived_count = 0;
-        while (heal_pool > 0 && discardedDeck != null && !discardedDeck.isEmpty()) {
-             
-
+        while (heal_pool > 0 && discardedDeck != null && !discardedDeck.isEmpty()) { // full revive loop
+            DiscardedCard dc = getHmissingBestCard(heal_pool); // get best card within heal pool
+            if (dc == null) break;
 
             if (dc.Hmissing <= heal_pool) {
                 heal_pool -= dc.Hmissing;
@@ -172,18 +170,14 @@ public class MainLogic {
                 dc.fully_revive();
                 entryOrderCounter++;
                 Card c = new Card(dc.name, dc.Abase, dc.Hbase, entryOrderCounter);
-                if (c.name.equals(""))
-                    System.out.println("debug");
+                if (c.name.equals("small5512")) System.out.println("debug");
                 insert_card(c);
                 revived_count++;
             } else break;
         }
-
+        // final partial revive if any heal pool left
         if (heal_pool > 0 && discardedDeck != null && !discardedDeck.isEmpty()) {
             DiscardedCard dc = getMinHmissingCard();
-            if (dc.name.equals("medium45471"))
-                System.out.println("debug");
-
             discardedDeck.remove(dc);
             dc.Hmissing -= heal_pool;
             dc.partial_revive();
@@ -195,18 +189,18 @@ public class MainLogic {
         }
         return revived_count;
     }
-
+    // helper to get best Hmissing card within heal pool
     public DiscardedCard getHmissingBestCard(int heal_pool) {
         if (discardedDeck == null || discardedDeck.root == null) return null;
 
-        DiscardedNode n = discardedDeck.root;
-        DiscardedNode best = null;
+        DiscardedNode n = discardedDeck.root; // start from root
+        DiscardedNode best = null; // to keep track of best candidate
 
         while (n != null) {
             DiscardedCard d = n.data;
-
+            // check if this card can be healed
             if (d.Hmissing <= heal_pool) {
-                if (best == null ||
+                if (best == null || 
                     d.Hmissing > best.data.Hmissing ||
                     (d.Hmissing == best.data.Hmissing && d.entryOrder < best.data.entryOrder)) {
                     best = n;
@@ -218,7 +212,7 @@ public class MainLogic {
         }
         return best == null ? null : best.data;
     }
-
+    // helper to get min Hmissing card
     private DiscardedCard getMinHmissingCard() {
         if (discardedDeck == null || discardedDeck.root == null) return null;
 
@@ -245,20 +239,20 @@ public class MainLogic {
         if (our_card.Hcur > 0 && our_card.Hcur <= our_card.Hbase) point_counter_op += 1;
         if (oppCard.Hcur > 0 && oppCard.Hcur <= oppCard.Hbase) point_counter_us += 1;
     }
-
+    // helper to revise deck after playing a card
     private void reviseDeck(Card played_card, int heal_pool) {
         int revived_count = 0;
         if (played_card.Hcur <= 0) remove_card(played_card);
     }
-
+    // helper to get deck count
     public static String deck_count() {
         return "Number of cards in the deck: " + deck.getSize();
     }
-
+    // helper to get discarded pile count
     public static String discard_pile_count() {
         return "Number of cards in the discard pile: " + discardedDeck.getSize();
     }
-
+    // helper to find winner
     public static String find_winning() {
         if (point_counter_us >= point_counter_op)
             return "The Survivor, Score: " + point_counter_us;
@@ -280,7 +274,7 @@ public class MainLogic {
         p1_find(deck.root, Astr, Hstr, hit);
         return hit.isEmpty() ? null : hit.node.data;
     }
-
+    // helper for priority 1
     private void p1_find(Node n, int Astr, int Hstr, Best<Node> hit) {
         if (n == null) return;
         if (n.data.name.equals("small5401")) {
@@ -288,13 +282,13 @@ public class MainLogic {
         }
 
         if (n.max_a < Hstr || n.max_h <= Astr) return;
-
+        // check left child
         if (hit.isEmpty() || (n.data.Acur >= Hstr)) {
             if (n.leftChild != null && n.leftChild.max_a >= Hstr && n.leftChild.max_h > Astr) {
                 p1_find(n.leftChild, Astr, Hstr, hit);
             }
         }
-
+        // check current node
         int a = n.data.Acur, h = n.data.Hcur;
         if (a >= Hstr && h > Astr) {
             if (hit.isEmpty() ||
@@ -305,7 +299,7 @@ public class MainLogic {
                 hit.update(n);
             }
         }
-
+        // check right child
         if (hit.isEmpty() || (n.rightChild != null && (n.data.Acur <= hit.node.data.Acur))) {
             if (n.rightChild != null && n.rightChild.max_a >= Hstr && n.rightChild.max_h > Astr)
                 p1_find(n.rightChild, Astr, Hstr, hit);
@@ -319,7 +313,7 @@ public class MainLogic {
         p2_find(deck.root, Astr, Hstr, best);
         return best.isEmpty() ? null : ((Card) best.node.data);
     }
-
+    // helper for priority 2
     private void p2_find(Node n, int Astr, int Hstr, Best<Node> best) {
         if (n == null) return;
         if (n.data.name.equals("small5573")) {
@@ -327,7 +321,7 @@ public class MainLogic {
         }
 
         if (n.max_h <= Astr || n.min_a >= Hstr) return;
-
+        // check right child
         if (n.rightChild != null &&
             n.rightChild.min_a < Hstr &&
             n.rightChild.max_h > Astr) {
@@ -336,7 +330,7 @@ public class MainLogic {
 
         int a = n.data.Acur;
         int h = n.data.Hcur;
-
+        // check current node
         if (a < Hstr && h > Astr) {
             if (best.isEmpty() ||
                 a > best.node.data.Acur ||
@@ -346,7 +340,7 @@ public class MainLogic {
                 best.update(n);
             }
         }
-
+        // check left child
         if (best.isEmpty() || (n.leftChild != null && n.data.Acur >= best.node.data.Acur)) {
             if (n.leftChild != null &&
                 n.leftChild.min_a < Hstr &&
@@ -363,7 +357,7 @@ public class MainLogic {
         p3_find(deck.root, Astr, Hstr, best);
         return best.isEmpty() ? null : (Card) best.node.data;
     }
-
+// helper for priority 3
     private void p3_find(Node n, int Astr, int Hstr, Best<Node> best) {
         if (n == null) return;
 
@@ -374,10 +368,10 @@ public class MainLogic {
             p3_find(L, Astr, Hstr, best);
         }
 
-        int a = n.data.Acur;
-        int h = n.data.Hcur;
+        int a = n.data.Acur;//get attack
+        int h = n.data.Hcur;//get health
 
-        if (a >= Hstr && h <= Astr) {
+        if (a >= Hstr && h <= Astr) { // found a candidate
             if (best.isEmpty() ||
                 (a < best.node.data.Acur) ||
                 (a == best.node.data.Acur && h < best.node.data.Hcur) ||
@@ -389,12 +383,12 @@ public class MainLogic {
 
         Node R = n.rightChild;
         if (R != null && R.max_a >= Hstr && R.min_h <= Astr) {
-            p3_find(R, Astr, Hstr, best);
+            p3_find(R, Astr, Hstr, best); //find in right subtree
         }
     }
 
     // ---------- Priority 4 ----------
-    public Card pickP4() {
+    public Card pickP4() { // find max A, then min H
         if (deck == null || deck.root == null) return null;
         int targetA = deck.root.max_a;
         Best<Node> best = new Best<>();
@@ -412,10 +406,10 @@ public class MainLogic {
 
         p4_findMinHWithA(n.leftChild, targetA, best);
 
-        int a = n.data.Acur;
-        int h = n.data.Hcur;
+        int a = n.data.Acur; //get attack
+        int h = n.data.Hcur; //get health
 
-        if (a == targetA) {
+        if (a == targetA) { // found a candidate
             if (best.isEmpty() ||
                 h < best.node.data.Hcur ||
                 (h == best.node.data.Hcur && n.data.entryOrder < best.node.data.entryOrder)) {
@@ -423,6 +417,6 @@ public class MainLogic {
             }
         }
 
-        p4_findMinHWithA(n.rightChild, targetA, best);
+        p4_findMinHWithA(n.rightChild, targetA, best); //find in right subtree
     }
 }

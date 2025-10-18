@@ -22,7 +22,7 @@ from typing import Dict, Deque, List, Tuple, Optional
 
 # Matches any "Survivor plays <card>" line (captures the card ID and the whole line for context)
 PLAY_LINE_RE = re.compile(
-    r"Found with priority\s+\d+,\s*Survivor plays\s+(medium\d+)\s*,\s*(.*)$"
+    r"Found with priority\s+\d+,\s*Survivor plays\s+(large\d+)\s*,\s*(.*)$"
 )
 
 # Specifically identifies a discard event among play lines
